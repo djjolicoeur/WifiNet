@@ -25,23 +25,23 @@ class WifiNet
         keyStack.push(split[1].strip)
       end
     end
-		
-		q = 0
-		while essidStack.size() != 0
-			e = essidStack.pop
-			rawQual = qualityStack.pop
-			k = keyStack.pop
+    
+    q = 0
+    while essidStack.size() != 0
+      e = essidStack.pop
+      rawQual = qualityStack.pop
+      k = keyStack.pop
 
-			split = rawQual.split("/")
-			
-			newQ = split[0].to_i / split[1].to_i
-			
-			if newQ > q and key.downcase == "off"
-				q = newQ
-				@essid = e
-				@key = k
-				@quality = q
-			end
+      split = rawQual.split("/")
+      
+      newQ = split[0].to_i / split[1].to_i
+      
+      if newQ > q and key.downcase == "off"
+        q = newQ
+        @essid = e
+        @key = k
+        @quality = q
+      end
 
 
 
