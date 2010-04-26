@@ -79,8 +79,12 @@ class WifiNet
 
 end    
 
+if ARGV.size < 1
+  puts "Usage ruby WifiNet.rb <interface>"
+  exit
+end
 
-net = WifiNet.new("wlan1")
+net = WifiNet.new(ARGV[0])
 
 puts net.essid
 puts net.quality
