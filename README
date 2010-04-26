@@ -1,0 +1,2 @@
+if you have ruby installed on yor linux machine, and you have access to iwlist, iwconfig, and dhcpcd, just download the source and run ruby WifiNet.rb as root. 
+
