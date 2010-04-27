@@ -67,6 +67,11 @@ class WifiNet
         @quality = q
       end
     end
+
+		if @essid == nil
+			puts "no unsecured networks available. exiting."
+			exit
+		end
     
   end
         
