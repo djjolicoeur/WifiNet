@@ -68,10 +68,10 @@ class WifiNet
       end
     end
 
-		if @essid == nil
-			puts "no unsecured networks available. exiting."
-			exit
-		end
+    if @essid == nil
+      puts "no unsecured networks available. exiting."
+      exit
+    end
     
   end
         
